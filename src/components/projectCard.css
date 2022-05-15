@@ -114,6 +114,9 @@
 .fire{
     background-color: rgb(218, 69, 0);
 }
+.red{
+    background-color: rgb(218, 15, 0);
+}
 .ocean{
     background-color: rgb(34, 145, 209);
 }
@@ -122,6 +125,12 @@
 }
 .green{
     background-color: rgb(24, 131, 104);
+}
+.grass{
+    background-color: rgb(66, 185, 125);
+}
+.blue{
+    background-color: rgb(66, 123, 185);
 }
 .cobalt{
     background-color: rgb(59, 72, 134);

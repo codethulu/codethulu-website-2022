@@ -7,7 +7,6 @@ import {
 } from "react-scroll";
 import ScrollAnimation from 'react-animate-on-scroll';
 
-import logo from './images/logo.svg';
 import photo from './images/profile-pic.jpg'
 import warwick from './images/warwick.jpg'
 import twitter_logo from './images/twitter_logo.svg';
@@ -18,6 +17,7 @@ import github_logo from './images/github-logo.svg';
 import projectsList from './components/projectsList';
 import './components/projectCard.css'
 import "animate.css/animate.min.css";
+import { isPropertySignature } from 'typescript';
 
 function App() {
   const [projects, setProjects] = useState(projectsList.filter((project: { tags: string | string[]; }) => project.tags.includes("favourites")));
@@ -131,24 +131,8 @@ const ProjectCard = (props: ProjectCardProps) => {
       <p> {props.description}</p>
       <div className='center'>
         {props.tags.map((e) => {
-          let tagStyle = 'tag'
-          if (e === "java" || e === "javascript") {
-            tagStyle += ' orange'
-          } else if (e === "haskell") {
-            tagStyle += ' purple'
-          } else if (e === "c") {
-            tagStyle += ' green'
-          } else if (e === "postgresql") {
-            tagStyle += ' cobalt'
-          } else if (e === "html" || e === "swift" || e === "favourites") {
-            tagStyle += ' fire'
-          } else if (e === "css" || e === "typescript") {
-            tagStyle += ' ocean'
-          } else if (e === "python") {
-            tagStyle += ' snake'
-          }
           return (
-            <button className={tagStyle} onClick={() => props.filterProjects(e)}>{e}</button>
+            <Tag name={e} filterProjects={props.filterProjects} />
           );
         })}
       </div>
@@ -159,25 +143,18 @@ const ProjectCard = (props: ProjectCardProps) => {
 
 const ProjectShowcase = (props: { allProjects: any; filterProjects: any; filterProjectsTitle: any; projects: any }) => {
   const [searchTerm, setSearchTerm] = React.useState("");
-  const handleSearchChange = (e: { target: { value: React.SetStateAction<string>; }; }) => {
-    setSearchTerm(e.target.value)
-    props.filterProjectsTitle(searchTerm)
-  }
   return (
     <>
       {/* <Element name="projects" className="element"></Element> */}
       <div className='divider'></div>
 
       <div className='center m-top-50'>
-        <button className="tag fire" onClick={() => props.filterProjects("favourites")}>FAVOURITES</button>
-        <button className="tag snake" onClick={() => props.filterProjects("python")}>PYTHON</button>
-        <button className="tag orange" onClick={() => props.filterProjects("java")}>JAVA</button>
-        <button className="tag purple" onClick={() => props.filterProjects("haskell")}>HASKELL</button>
-        <button className="tag" onClick={() => props.filterProjects("web-dev")}>WEB-DEV</button>
-        <button className="tag" onClick={() => props.allProjects()}>ALL</button>
-
-        {/* <input type="text" className='searchBar' placeholder='Search' value={searchTerm} onChange={handleSearchChange}></input>
-        <div className='divider'></div> */}
+        <Tag name='favourites' filterProjects={props.filterProjects} />
+        <Tag name='python' filterProjects={props.filterProjects} />
+        <Tag name='java' filterProjects={props.filterProjects} />
+        <Tag name='haskell' filterProjects={props.filterProjects} />
+        <Tag name='web-dev' filterProjects={props.filterProjects} />
+        <Tag name='all' filterProjects={props.allProjects} />
       </div>
 
       <div className='inner-container h-auto m-top-50'>
@@ -215,5 +192,38 @@ const SideLinks = () => {
         <div className='line'></div>
       </div>
     </div>
+  );
+}
+interface TagProps {
+  name: string; filterProjects: any;
+}
+const Tag = (props: TagProps) => {
+  let colour: string;
+  if (props.name === "java" || props.name === "javascript") {
+    colour = 'orange'
+  } else if (props.name === "haskell") {
+    colour = 'purple'
+  } else if (props.name === "c") {
+    colour = 'green'
+  } else if (props.name === "php" || props.name === "web-dev") {
+    colour = 'grass'
+  } else if (props.name === "sql") {
+    colour = 'red'
+  } else if (props.name === "postgresql" || props.name === "pathfinding" || props.name === "functional") {
+    colour = 'cobalt'
+  } else if (props.name === "html" || props.name === "swift" || props.name === "favourites") {
+    colour = 'fire'
+  } else if (props.name === "css") {
+    colour = 'blue'
+  } else if (props.name === "typescript" || props.name === "react") {
+    colour = 'ocean'
+  } else if (props.name === "python") {
+    colour = 'snake'
+  } else {
+    colour = "";
+  }
+
+  return (
+    <button className={"tag " + colour} onClick={() => props.filterProjects(props.name)}>{props.name}</button>
   );
 }

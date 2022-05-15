@@ -44,7 +44,7 @@ const projectsList = [
     {
         name: "SYTES: A task managing web app",
         description: "SYTES is a task managing application, where users can create and log into accounts and create their own 'syte' which contains a number of tasks the user has created. Users can invite other people to their 'syte', sort their tasks, and send email notifications.",
-        tags: ["html", "css", "javascript", "SQL", "PHP", "web-dev"],
+        tags: ["html", "css", "javascript", "sql", "php", "web-dev"],
         image: "sytes",
     },
     {
