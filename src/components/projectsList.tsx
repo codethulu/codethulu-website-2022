@@ -159,6 +159,14 @@ const projectsList = [
         image: "parser",
 
     },
+    {
+        name: "Simple Rust DFA Program",
+
+        description: "An alternative approach to regex checker, written in rust. The problem is hard difficulty and this implementation is faster than 100% rust solutions. Meant to be a more novel implementation of the regex checker.",
+        tags: ["rust"],
+        image: "dfa",
+
+    },
 
 ]
 export default projectsList;
