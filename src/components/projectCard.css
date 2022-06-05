@@ -138,6 +138,9 @@
 .snake{
     background-color: rgb(142, 165, 40);
 }
+.rust{
+    background-color: rgb(190, 120, 92);
+}
 .image-robot-maze{
     background-image: url(../images/projects/robot-maze.png);
 }

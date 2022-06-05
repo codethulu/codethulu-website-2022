@@ -112,9 +112,9 @@ const projectsList = [
 
     },
     {
-        name: "AI Timetable Scheduler",
+        name: "Show Must Go On",
 
-        description: "Using artificial intelligence concepts and techniques, such as backtracking and simulated annealing, I created the methods required to create valid timetables matching comedians to demographics that they would appeal to.",
+        description: "Using artificial intelligence concepts and techniques, such as backtracking and simulated annealing, I created the methods required to create valid timetables satisfying constraints that would allow for valid matching of comedians to demographics that they would appeal to.",
         tags: ["python", "ai"],
         image: "ai-timetable",
 
