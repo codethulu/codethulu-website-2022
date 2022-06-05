@@ -118,7 +118,7 @@ const Split = (props: SplitProps) => {
 }
 
 interface ProjectCardProps {
-  name: string; description: string; tags: string[]; image: string; filterProjects: any;
+  name: string; year: string; description: string; tags: string[]; image: string; filterProjects: any;
 }
 const ProjectCard = (props: ProjectCardProps) => {
   return (
@@ -128,6 +128,7 @@ const ProjectCard = (props: ProjectCardProps) => {
 
       <div className={'image image-' + props.image}></div>
       <h1> {props.name} </h1>
+      <h2> {"[ " + props.year + " ]"} </h2>
       <p> {props.description}</p>
       <div className='center'>
         {props.tags.map((e) => {
@@ -166,9 +167,9 @@ const ProjectShowcase = (props: { allProjects: any; filterProjects: any; filterP
           defaultColumns={3}
           defaultSpacing={2}
         >
-          {props.projects.map((e: { name: string; titleCard: boolean; description: string; tags: string[]; image: string; showcase: boolean; }) => {
+          {props.projects.map((e: { name: string; year: string; titleCard: boolean; description: string; tags: string[]; image: string; showcase: boolean; }) => {
             return (
-              <ProjectCard name={e.name} description={e.description} tags={e.tags} image={e.image} filterProjects={props.filterProjects} />
+              <ProjectCard name={e.name} year={e.year} description={e.description} tags={e.tags} image={e.image} filterProjects={props.filterProjects} />
             );
           })}
         </Masonry>

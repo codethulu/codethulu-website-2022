@@ -26,13 +26,18 @@
     color: white;
     font-size: 16pt;
     padding-inline: 0px;
-    margin: 10px 10px;
-    text-align: center;
+    margin: 0px 20px;
+}
+.project-card h2{
+    color: rgb(206, 206, 206);
+    font-size: 12pt;
+    padding-inline: 0px;
+    margin: 5px 20px;
 }
 .project-card p{
     font-size: 10pt;
     padding-inline: 0px;
-    margin: 10px 20px;
+    margin: 20px 20px;
 }
 
 
@@ -43,19 +48,21 @@
     display: inline-block;
     background-color: rgb(92, 92, 92);
     border-radius: 20px;
+    font-family: SpaceGrotesk-Bold;
+
     padding: 5px;
     padding-inline: 10px;
     text-transform: uppercase;
     font-size: 8pt;
-    margin-inline: 2px;
+    margin-inline: 4px;
     margin-bottom: 6px;
-    transition-duration: 0.2s;
+    transition-duration: 0.3s;
     border: none;
     text-align: center;
 
 }
 .tag:hover{
-    transform: scale(1.05);
+    transform: scale(1.04) translateY(-3px);
     cursor: pointer;
 
 }
