@@ -103,7 +103,7 @@ const projectsList = [
         name: "Ursina Elements",
         year: "2022",
         description: "A simple minecraft clone written in python. The player may move, place and destroy blocks, and combine items in their inventory (inspired by the main mechanic in little alchemy) to unlock new building materials. ",
-        tags: ["python"],
+        tags: ["python", "games"],
         image: "ursina-elements",
 
     },
