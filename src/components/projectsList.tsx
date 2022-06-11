@@ -88,7 +88,7 @@ const projectsList = [
         year: "2021",
         description: "A multithreaded packet sniffer that applies my packet structure knowledge and threading methods to produce a basic intrusion detection system. The program sniffs packets and informs the user if it detects ARP cache poisoning, SYN flooding or a blacklisted URL.",
         tags: ["c", "favourites"],
-        image: "../images/projects/robot-maze.png",
+        image: "cs241",
 
     },
     {
@@ -96,7 +96,7 @@ const projectsList = [
         year: "2021",
         description: "In this project I was tasked to write the SQl queries required for a music production company to book acts for an upcoming festival. This involved designing a system and displaying the appropriate data required to schedule, remove and get information about gigs.",
         tags: ["postgresql", "sql", "java"],
-        image: "../images/projects/robot-maze.png",
+        image: "cs258",
 
     },
     {
@@ -120,7 +120,7 @@ const projectsList = [
         year: "2022",
         description: "Using artificial intelligence concepts and techniques, such as backtracking and simulated annealing, I created the methods required to create valid timetables satisfying constraints that would allow for valid matching of comedians to demographics that they would appeal to.",
         tags: ["python", "ai"],
-        image: "ai-timetable",
+        image: "cs255",
 
     },
     {
@@ -152,7 +152,7 @@ const projectsList = [
         year: "2022",
         description: "I wrote a program to check whether logical statements are tautologies or not, using prolog. The program works by apply resolution rules and backtracking ",
         tags: ["prolog"],
-        image: "resolution",
+        image: "cs262",
 
     },
     {
@@ -160,7 +160,7 @@ const projectsList = [
         year: "2022",
         description: "Using javacc, I wrote a parser for a Programming Language of the Moment. The parser has protected keywords, rules for matching brackets and a grammar that the language should follow. This project allowed me to apply theory I have enjoyed learning in my degree in a practical way.",
         tags: ["java", "parser", "javacc"],
-        image: "parser",
+        image: "cs259",
 
     },
     {
