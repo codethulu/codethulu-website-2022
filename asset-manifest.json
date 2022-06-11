@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.777b4614.css",
-    "main.js": "/static/js/main.a7653f81.js",
+    "main.css": "/static/css/main.c0e1a8ef.css",
+    "main.js": "/static/js/main.d1da5737.js",
     "static/js/787.7baaa7a4.chunk.js": "/static/js/787.7baaa7a4.chunk.js",
     "static/media/profile-pic.png": "/static/media/profile-pic.3bdea3083575aa866ace.png",
     "static/media/cs140.jpg": "/static/media/cs140.d8ea76719b6aa8b13d81.jpg",
@@ -15,18 +15,23 @@
     "static/media/warwick-labour-website.jpg": "/static/media/warwick-labour-website.8563b8f1657f5a649998.jpg",
     "static/media/BebasNeue-Regular.ttf": "/static/media/BebasNeue-Regular.9aa03f9d52866893add5.ttf",
     "static/media/cs141.png": "/static/media/cs141.b2096f11ce44fde75def.png",
+    "static/media/cs241.jpg": "/static/media/cs241.09373ecc35a60bc78249.jpg",
     "static/media/title-chamber.jpg": "/static/media/title-chamber.ad1d67852c965e7baee8.jpg",
+    "static/media/cs258.jpg": "/static/media/cs258.9ec25bce4799d14e0629.jpg",
     "static/media/404.jpg": "/static/media/404.e450d84899953442a8f1.jpg",
     "static/media/essay.png": "/static/media/essay.2c05cf061be8cf3e1949.png",
     "static/media/cs141-1.jpg": "/static/media/cs141-1.21440b189174604b9708.jpg",
     "static/media/parser.jpg": "/static/media/parser.264e5f4010c73c74c868.jpg",
+    "static/media/cs255.jpg": "/static/media/cs255.c273874656a91ac3c47a.jpg",
     "static/media/mentor-connect.jpg": "/static/media/mentor-connect.fe145195b47c536b0b51.jpg",
     "static/media/cs141-1-a.jpg": "/static/media/cs141-1-a.f85970fddeb608ebf31d.jpg",
     "static/media/ursina.jpg": "/static/media/ursina.97bfd5bb07816ad15b3b.jpg",
     "static/media/website2.jpg": "/static/media/website2.fcab687d27a65239c122.jpg",
+    "static/media/cs262.jpg": "/static/media/cs262.f1d36a66c6614f35d285.jpg",
     "static/media/sytes.jpg": "/static/media/sytes.8df6c7a8380e92215982.jpg",
     "static/media/robot-maze.png": "/static/media/robot-maze.36d099bb9f9b91e6c963.png",
     "static/media/chamber.jpg": "/static/media/chamber.f4e00e6140c49e808d8c.jpg",
+    "static/media/cs259.jpg": "/static/media/cs259.0ac984f57151e601ae4c.jpg",
     "static/media/old-website.jpg": "/static/media/old-website.72b978700ea7b9259ff4.jpg",
     "static/media/go-tools.jpg": "/static/media/go-tools.f89721a5eb990803d365.jpg",
     "static/media/linkedin-logo.svg": "/static/media/linkedin-logo.547dee20080ed430c4142d0c1ebf79e8.svg",
@@ -36,12 +41,12 @@
     "static/media/down-button.svg": "/static/media/down-button.1e21b3b55d198acc1ebc.svg",
     "static/media/github-logo.svg": "/static/media/github-logo.d40e07b7000728d926f017744e9fe7c4.svg",
     "index.html": "/index.html",
-    "main.777b4614.css.map": "/static/css/main.777b4614.css.map",
-    "main.a7653f81.js.map": "/static/js/main.a7653f81.js.map",
+    "main.c0e1a8ef.css.map": "/static/css/main.c0e1a8ef.css.map",
+    "main.d1da5737.js.map": "/static/js/main.d1da5737.js.map",
     "787.7baaa7a4.chunk.js.map": "/static/js/787.7baaa7a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.777b4614.css",
-    "static/js/main.a7653f81.js"
+    "static/css/main.c0e1a8ef.css",
+    "static/js/main.d1da5737.js"
   ]
 }
