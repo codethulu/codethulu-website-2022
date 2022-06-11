@@ -148,6 +148,12 @@
 .rust{
     background-color: rgb(190, 120, 92);
 }
+.rose{
+    background-color: rgb(222, 153, 222);
+}
+.pink{
+    background-color: rgb(248, 100, 248);
+}
 .image-robot-maze{
     background-image: url(../images/projects/robot-maze.png);
 }

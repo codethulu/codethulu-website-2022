@@ -140,8 +140,8 @@ const projectsList = [
     {
         name: "Hurdle",
         year: "2022",
-        description: "A haskell implementation of the hit game Wordle. The player must guess a word, and each letter will be highlighted green if it is in the correct place, amber if it exists in the word but incorectly placed, or grey if not present at all.",
-        tags: ["haskell", "functional"],
+        description: "A haskell implementation of the hit game Wordle. The player must guess a word, and each letter will be highlighted green if it is in the correct place, amber if it exists in the word but incorectly placed, or grey if not present at all. After building the basic functionality, I developed an artificial intelligence player to solve the game.",
+        tags: ["haskell", "functional", "ai"],
         image: "hurdle",
 
     },
@@ -173,7 +173,7 @@ const projectsList = [
         name: "Writing a Parser",
         year: "2022",
         description: "Using javacc, I wrote a parser for a Programming Language of the Moment. The parser has protected keywords, rules for matching brackets and a grammar that the language should follow. This project allowed me to apply theory I have enjoyed learning in my degree in a practical way.",
-        tags: ["java", "parser", "javacc"],
+        tags: ["java", "javacc", "parser"],
         image: "cs259",
 
     },

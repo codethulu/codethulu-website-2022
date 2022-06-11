@@ -184,6 +184,7 @@ const ProjectShowcase = (props: { allProjects: any; filterProjects: any; filterP
         <Tag name='python' filterProjects={props.filterProjects} />
         <Tag name='java' filterProjects={props.filterProjects} />
         <Tag name='haskell' filterProjects={props.filterProjects} />
+        <Tag name='games' filterProjects={props.filterProjects} />
         <Tag name='web-dev' filterProjects={props.filterProjects} />
         <Tag name='all' filterProjects={props.allProjects} />
       </div>
@@ -239,8 +240,12 @@ const Tag = (props: TagProps) => {
     colour = 'rust'
   } else if (props.name === "c") {
     colour = 'green'
-  } else if (props.name === "php" || props.name === "web-dev") {
+  } else if (props.name === "php" || props.name === "web-dev" || props.name === "javacc") {
     colour = 'grass'
+  } else if (props.name === "games") {
+    colour = 'rose'
+  } else if (props.name === "ai") {
+    colour = 'pink'
   } else if (props.name === "sql") {
     colour = 'red'
   } else if (props.name === "postgresql" || props.name === "pathfinding" || props.name === "functional") {
