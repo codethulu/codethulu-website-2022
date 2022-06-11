@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.c0e1a8ef.css",
-    "main.js": "/static/js/main.d1da5737.js",
+    "main.css": "/static/css/main.9061c2b2.css",
+    "main.js": "/static/js/main.5ccea1a2.js",
     "static/js/787.7baaa7a4.chunk.js": "/static/js/787.7baaa7a4.chunk.js",
     "static/media/profile-pic.png": "/static/media/profile-pic.3bdea3083575aa866ace.png",
+    "static/media/paint.png": "/static/media/paint.87b2a477c221dcabc85e.png",
     "static/media/cs140.jpg": "/static/media/cs140.d8ea76719b6aa8b13d81.jpg",
     "static/media/cs126.jpg": "/static/media/cs126.486261028d814a0f5182.jpg",
     "static/media/mh.jpg": "/static/media/mh.7cb443b7aedbd188c470.jpg",
     "static/media/ncurses.png": "/static/media/ncurses.4e28abe17bd956d91ffe.png",
-    "static/media/paint.png": "/static/media/paint.a1cd5ffb43b3c82c9031.png",
     "static/media/VictorMono-Regular.otf": "/static/media/VictorMono-Regular.62ab6b20ae8236e13b55.otf",
     "static/media/SpaceGrotesk-SemiBold.ttf": "/static/media/SpaceGrotesk-SemiBold.ed2db1918ac205ac4d40.ttf",
     "static/media/SpaceGrotesk-Bold.ttf": "/static/media/SpaceGrotesk-Bold.25a5e7fd63d35d7f6448.ttf",
@@ -21,8 +21,10 @@
     "static/media/404.jpg": "/static/media/404.e450d84899953442a8f1.jpg",
     "static/media/essay.png": "/static/media/essay.2c05cf061be8cf3e1949.png",
     "static/media/cs141-1.jpg": "/static/media/cs141-1.21440b189174604b9708.jpg",
+    "static/media/love-garden.jpg": "/static/media/love-garden.20028b3160957c0a8b11.jpg",
     "static/media/parser.jpg": "/static/media/parser.264e5f4010c73c74c868.jpg",
     "static/media/cs255.jpg": "/static/media/cs255.c273874656a91ac3c47a.jpg",
+    "static/media/next.jpg": "/static/media/next.06decdd2ef00998f9dc0.jpg",
     "static/media/mentor-connect.jpg": "/static/media/mentor-connect.fe145195b47c536b0b51.jpg",
     "static/media/cs141-1-a.jpg": "/static/media/cs141-1-a.f85970fddeb608ebf31d.jpg",
     "static/media/ursina.jpg": "/static/media/ursina.97bfd5bb07816ad15b3b.jpg",
@@ -41,12 +43,12 @@
     "static/media/down-button.svg": "/static/media/down-button.1e21b3b55d198acc1ebc.svg",
     "static/media/github-logo.svg": "/static/media/github-logo.d40e07b7000728d926f017744e9fe7c4.svg",
     "index.html": "/index.html",
-    "main.c0e1a8ef.css.map": "/static/css/main.c0e1a8ef.css.map",
-    "main.d1da5737.js.map": "/static/js/main.d1da5737.js.map",
+    "main.9061c2b2.css.map": "/static/css/main.9061c2b2.css.map",
+    "main.5ccea1a2.js.map": "/static/js/main.5ccea1a2.js.map",
     "787.7baaa7a4.chunk.js.map": "/static/js/787.7baaa7a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0e1a8ef.css",
-    "static/js/main.d1da5737.js"
+    "static/css/main.9061c2b2.css",
+    "static/js/main.5ccea1a2.js"
   ]
 }
