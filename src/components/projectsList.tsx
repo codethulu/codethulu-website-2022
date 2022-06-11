@@ -10,7 +10,7 @@ const projectsList = [
     {
         name: "Robot Maze",
         year: "2020",
-        description: "I created a pathfinding controller to guide a robot through a randomly generated maze. This project was written in java and made use of my research into pathfinding algorithms such as djikstra and the A* algorithm. ",
+        description: "I created a pathfinding controller to guide a robot through a randomly generated maze. This project was written in java and implemented pathfinding algorithms such as djikstra and the A* algorithm. ",
         tags: ["java", "pathfinding"],
         image: "robot-maze",
 
@@ -25,8 +25,8 @@ const projectsList = [
     {
         name: "Large Arithmetic Collider",
         year: "2021",
-        description: "The Large Arithmetic Collider is a complex puzzle that involved rotating, transposing and manipulating lists in haskell. I wrote my own tree structure to consider the different decisions in order to solve the puzzle as efficiently as possible.",
-        tags: ["haskell", "functional"],
+        description: "The Large Arithmetic Collider is a complex puzzle that involved rotating, transposing and manipulating lists in haskell. I wrote an artificial intelligence player that considers the different decisions it should make in order to solve the puzzle as efficiently as possible.",
+        tags: ["haskell", "functional", "ai"],
         image: "ldc",
 
     },
@@ -54,7 +54,7 @@ const projectsList = [
     {
         name: "Scratch Clone",
         year: "2021",
-        description: "Scratch is a high-level visual programming langauge that uses draggable blocks to form procedures. Using Haskell I wrote a back end to interpret blockly blocks. Users of the program can assemble a simple program by dragging blocks to perform arithmetic on values stored in the memory of the program.",
+        description: "Scratch is a high-level visual programming langauge that uses draggable blocks to form procedures. Using Haskell I wrote an interpreter to read the instructions from the draggable blocks. Users of the program can assemble a simple program by dragging blocks to perform arithmetic on values stored in the memory of the program.",
         tags: ["haskell", "functional", "favourites"],
         image: "scratch-clone",
 
@@ -62,7 +62,7 @@ const projectsList = [
     {
         name: "WAFFLES: A data structure project",
         year: "2021",
-        description: "A project that emphasised the application of data structures and sorting algorithms content I had learnt at University. The backend for a restaurant review website I wrote utilised AVL trees, binary searches and hashmaps to efficiently store and locate data for the system.",
+        description: "A project that emphasised the application of data structure and algorithms content I had learnt at University. The backend for a restaurant review website I wrote utilised AVL trees, binary searches and hashmaps to efficiently store and locate data for the system.",
         tags: ["java"],
         image: "waffles",
 
