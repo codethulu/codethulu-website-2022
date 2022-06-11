@@ -17,7 +17,6 @@ import github_logo from './images/github-logo.svg';
 import projectsList from './components/projectsList';
 import './components/projectCard.css'
 import "animate.css/animate.min.css";
-import { isPropertySignature } from 'typescript';
 
 function App() {
   const [projects, setProjects] = useState(projectsList.filter((project: { tags: string | string[]; }) => project.tags.includes("favourites")));
@@ -33,6 +32,7 @@ function App() {
   return (
     <>
       <SideLinks />
+      <Navbar />
       <div className='welcome'>
 
         <h1> CODETHULU </h1>
@@ -196,6 +196,18 @@ const SideLinks = () => {
     </div>
   );
 }
+
+
+const Navbar = () => {
+  return (
+    <>
+    </>
+  );
+
+
+
+}
+
 interface TagProps {
   name: string; filterProjects: any;
 }
