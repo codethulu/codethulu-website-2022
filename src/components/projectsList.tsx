@@ -1,6 +1,20 @@
 
 const projectsList = [
     {
+        name: "Love Garden",
+        year: "2019",
+        description: "Love Garden was a simple RPG game built using pygame. As my first pygame project, it taught me a lot about making games without an engine, rendering order and how to build efficient game loops.",
+        tags: ["python", "games"],
+        image: "love-garden",
+    },
+    {
+        name: "NEXT",
+        year: "2019",
+        description: "NEXT was a simple linear dungeon crawling game written for my A Level NEA. The player would attempt to beat all enemies in a room before progressing onto the next room. In this project, I attempted to use what I had learnt from my previous pygame project and expand the scope, improve my code practices and create a more ambitious art style. This, however, resulted in lots of time being spent on graphical development rather than game mechanics so my final NEA project reduced the detail in art style and concentrated on a more stylised presentation so I could focus on game mechanics.",
+        tags: ["python", "games"],
+        image: "next",
+    },
+    {
         name: "The Chamber",
         year: "2019",
         description: "The Chamber is a procedurally generated dungeon crawler with pathfinding enemies, over 1000 hand drawn sprites and over 100 unique items. Each level of the infinitly sprawling dungeon has a procedurally generated floor plan: each with its own random layout, connections, and aesthetic. Enemies, friendly NPCs, and chests full of useful loot can randomly spawn. Beating enemies and exploring the dungeon help level the player up, which allows them to increase their stats using the skill tree. These stat increasements can aid the player in beating the boss that resides at the end of each floor.",
@@ -87,7 +101,7 @@ const projectsList = [
         name: "Multithreaded packet sniffer",
         year: "2021",
         description: "A multithreaded packet sniffer that applies my packet structure knowledge and threading methods to produce a basic intrusion detection system. The program sniffs packets and informs the user if it detects ARP cache poisoning, SYN flooding or a blacklisted URL.",
-        tags: ["c", "favourites"],
+        tags: ["c"],
         image: "cs241",
 
     },
@@ -143,7 +157,7 @@ const projectsList = [
         name: "Mentor Connect",
         year: "2022",
         description: "Mentor Connect is a web application that matches mentees to mentors based on heuristics obtained through machine learning. This project was undertaken as part of a group for Deutsche Bank, and allowed me to implement complex methods in django, to be deployed for the front end.",
-        tags: ["typescript", "react", "web-dev", "python", "django", "postgresql", "sql"],
+        tags: ["typescript", "react", "web-dev", "python", "django", "postgresql", "sql", "favourites"],
         image: "mentor-connect",
 
     },
