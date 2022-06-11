@@ -134,7 +134,7 @@ const projectsList = [
     {
         name: "Personal Website 2.0",
         year: "2022",
-        description: "The second iteration of my personal website. The layout is largely similar however since writing this version I have learnt more about React and efficient web design, so I have since moved on from this design.",
+        description: "The second iteration of my personal website. This was my first project written using react and typescript, and although there are similiarities between it and the website you are currently visiting, I have since improved my React skills susbtantially.",
         tags: ["typescript", "react", "web-dev"],
         image: "website2",
 
