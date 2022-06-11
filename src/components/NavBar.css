@@ -1,0 +1,31 @@
+.NavBar{
+    position: fixed;
+    color: rgb(255, 255, 255);
+    z-index: 20;
+    display: none;
+    padding-top: 10px;
+
+}
+
+
+ul {
+    color: white;
+    list-style-type: none;
+    padding-bottom: 7px;
+    font-family: BebasNeue;
+    float: left;
+    font-size: 7pt;
+    
+}
+
+ul:hover {
+    cursor: pointer;
+}
+@media (min-width: 1000px) { 
+    .NavBar{
+        display: block;
+    }
+    ul {
+        font-size: 0.8em
+    }
+}

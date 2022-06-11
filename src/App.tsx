@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+
+import NavBar from './components/NavBar';
+
 import { Masonry } from '@mui/lab';
 import './App.css';
 import {
@@ -7,14 +10,16 @@ import {
 } from "react-scroll";
 import ScrollAnimation from 'react-animate-on-scroll';
 
-import photo from './images/profile-pic.jpg'
+import photo from './images/profile-pic.png'
+import paint from './images/paint.png'
 import warwick from './images/warwick.jpg'
+import mh from './images/mh.jpg'
 import twitter_logo from './images/twitter_logo.svg';
 import email_logo from './images/message-logo.svg';
 import linkedin_logo from './images/linkedin-logo.svg';
 import github_logo from './images/github-logo.svg';
-
 import projectsList from './components/projectsList';
+import { Parallax, ParallaxBanner, ParallaxProvider } from 'react-scroll-parallax';
 import './components/projectCard.css'
 import "animate.css/animate.min.css";
 
@@ -31,50 +36,74 @@ function App() {
   }
   return (
     <>
-      <SideLinks />
-      <Navbar />
-      <div className='welcome'>
+      <ParallaxProvider>
+        {/* <SideLinks /> */}
+        <NavBar />
+        <div className='welcome'>
 
-        <h1> CODETHULU </h1>
-        <h2>brendan bell is a software engineer and graphic designer</h2>
+          <h1> CODETHULU </h1>
+          <h2>brendan bell is a software engineer and graphic designer</h2>
 
-        <Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={750} >
-          <div className='down-button'></div>
-        </Link>
-      </div>
-      <div className='container m-top-50'>
-        <Element name="about" className="element"></Element>
-        <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
-          <h1>hi, my name is Brendan.</h1>
-        </ScrollAnimation>
-        <Split style='left' text="i'm a software engineer and graphic designer, and i love to work on projects that allow me to apply my creative approach to solving problems. currently i am enjoying working on projects for the web and mobile, and game development." image={photo}></Split>
-        <Split style='right' text="i am currently studying Computer Science at the University of Warwick, where i am publicity officer at the Computing Society and deputy chair of Warwick Labour. " image={warwick}></Split>
+          <Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={750} >
+            <div className='down-button'></div>
+          </Link>
+        </div>
+        <div className='container m-top-50 h-full'>
+          <Element name="about" className="element"></Element>
+          <ScrollAnimation animateIn="animate__fadeInLeft" >
+            <h1>hi, my name is Brendan.</h1>
+          </ScrollAnimation>
+          <ParallaxBanner
+            className='parallax-banner'
+            layers={[
+              {
+                image: mh,
+                speed: -10,
+              },
+              {
+                image: paint,
+                speed: -15,
+              },
+              {
+                image: photo,
+                speed: -20,
+              },
+            ]}
+            style={{ aspectRatio: '2 / 1', marginBottom: '30px', marginTop: '30px', borderRadius: '10px' }}
 
-      </div>
-      <div className='container m-top-50'>
-        <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
-          <h1>here are some things i have made:</h1>
-        </ScrollAnimation>
-
-        <ProjectShowcase allProjects={allProjects} filterProjects={filterProjects} filterProjectsTitle={filterProjectsTitle} projects={projects} />
-
-
-      </div>
-      <div className='container m-top-50 h-full'>
-        <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
-          <h1>get in touch!</h1>
-        </ScrollAnimation>
-        <p className='m-top-50'>interested in working with me, or even just want to talk about any of my work? please don't hesitate to get in contact!</p>
-        <div className='center'>
-          <div className='m-top-50'></div>
-          <a href='mailto: brendan@codethulu.dev'><button className='contact-button m-top-20'><img src={email_logo} className='contact-logo'></img>  Email</button></a>
-          <a href='https://github.com/codethulu'><button className='contact-button m-top-20'><img src={github_logo} className='contact-logo'></img>  Github</button></a>
-          <a href='https://twitter.com/Codethulu_'><button className='contact-button m-top-20'><img src={twitter_logo} className='contact-logo'></img>  Twitter</button></a>
-          <a href='https://www.linkedin.com/in/brendan-bell-34b282202/'><button className='contact-button m-top-20'><img src={linkedin_logo} className='contact-logo'></img>  LinkedIn</button></a>
+          />
+          <p className='m-top-50'>i'm a software engineer and graphic designer. I am currently studying at The University of Warwick for a Computer Science degree, whilst trying to fit in all my other projects. </p>
+          {/* <Split style='left' text="i'm a software engineer and graphic designer, and i love to work on projects that allow me to apply my creative approach to solving problems. currently i am enjoying working on projects for the web and mobile, and game development." image={photo}></Split> */}
+          {/* <Split style='right' text="i am currently studying Computer Science at the University of Warwick, where i am publicity officer at the Computing Society and deputy chair of Warwick Labour. " image={warwick}></Split> */}
 
         </div>
+        <div className='container m-top-50'>
+          <Element name="projects" className="element"></Element>
+          <ScrollAnimation animateIn="animate__fadeInLeft">
+            <h1>here are some things i have made:</h1>
+          </ScrollAnimation>
 
-      </div>
+          <ProjectShowcase allProjects={allProjects} filterProjects={filterProjects} filterProjectsTitle={filterProjectsTitle} projects={projects} />
+
+
+        </div>
+        <div className='container m-top-50 h-full'>
+          <Element name="contact" className="element"></Element>
+          <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
+            <h1>get in touch!</h1>
+          </ScrollAnimation>
+          <p className='m-top-50'>interested in working with me, or even just want to talk about any of my work? please don't hesitate to get in contact!</p>
+          <div className='center'>
+            <div className='m-top-50'></div>
+            <a href='mailto: brendan@codethulu.dev'><button className='contact-button m-top-20'><img src={email_logo} className='contact-logo'></img>  Email</button></a>
+            <a href='https://github.com/codethulu'><button className='contact-button m-top-20'><img src={github_logo} className='contact-logo'></img>  Github</button></a>
+            <a href='https://twitter.com/Codethulu_'><button className='contact-button m-top-20'><img src={twitter_logo} className='contact-logo'></img>  Twitter</button></a>
+            <a href='https://www.linkedin.com/in/brendan-bell-34b282202/'><button className='contact-button m-top-20'><img src={linkedin_logo} className='contact-logo'></img>  LinkedIn</button></a>
+
+          </div>
+
+        </div>
+      </ParallaxProvider>
     </>
   );
 }
@@ -195,17 +224,6 @@ const SideLinks = () => {
       </div>
     </div>
   );
-}
-
-
-const Navbar = () => {
-  return (
-    <>
-    </>
-  );
-
-
-
 }
 
 interface TagProps {

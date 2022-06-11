@@ -10,6 +10,10 @@
     font-family: SpaceGrotesk-Bold;
     src: url(fonts/SpaceGrotesk-Bold.ttf);
 }
+@font-face {
+    font-family: VictorMono-Regular;
+    src: url(fonts/VictorMono-Regular.otf);
+}
 body {
   background-color: black;
 }
@@ -151,7 +155,7 @@ body {
   .container p{
     display: inline-block;
     font-family: SpaceGrotesk-SemiBold;
-    font-size: 18pt;
+    font-size: 16pt;
     color: rgb(175, 175, 175);
     margin: 0;
   }
@@ -172,7 +176,7 @@ body {
   .container p{
     display: inline-block;
     font-family: SpaceGrotesk-SemiBold;
-    font-size: 20pt;
+    font-size: 18pt;
     color: rgb(175, 175, 175);
     margin: 0;
   }
@@ -193,7 +197,7 @@ body {
   .container p{
     display: inline-block;
     font-family: SpaceGrotesk-SemiBold;
-    font-size: 24pt;
+    font-size: 18pt;
     color: rgb(175, 175, 175);
     margin: 0;
   }
@@ -357,4 +361,7 @@ body {
 }
 a{
   text-decoration: none;
+}
+.parallax-banner{
+  border-radius: 10px;
 }
