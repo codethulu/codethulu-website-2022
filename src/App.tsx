@@ -72,7 +72,7 @@ function App() {
             style={{ aspectRatio: '2 / 1', marginBottom: '30px', marginTop: '30px', borderRadius: '10px' }}
 
           />
-          <p className='m-top-50'>i'm a software engineer and graphic designer. I am currently studying at The University of Warwick for a Computer Science degree, whilst trying to fit in all my other projects. </p>
+          <p className='m-top-50'>i'm a software engineer and graphic designer. I am currently studying Computer Science at The University of Warwick, whilst trying to find time for all of my other projects. </p>
           {/* <Split style='left' text="i'm a software engineer and graphic designer, and i love to work on projects that allow me to apply my creative approach to solving problems. currently i am enjoying working on projects for the web and mobile, and game development." image={photo}></Split> */}
           {/* <Split style='right' text="i am currently studying Computer Science at the University of Warwick, where i am publicity officer at the Computing Society and deputy chair of Warwick Labour. " image={warwick}></Split> */}
 
@@ -263,6 +263,9 @@ const Tag = (props: TagProps) => {
   }
 
   return (
-    <button className={"tag " + colour} onClick={() => props.filterProjects(props.name)}>{props.name}</button>
+    <Link activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={750} >
+      <button className={"tag " + colour} onClick={() => props.filterProjects(props.name)}>{props.name}</button>
+    </Link>
+
   );
 }
