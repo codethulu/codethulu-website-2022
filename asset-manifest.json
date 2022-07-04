@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f3250f9d.css",
-    "main.js": "/static/js/main.eac01ed3.js",
+    "main.css": "/static/css/main.9b863ec0.css",
+    "main.js": "/static/js/main.b7002ea7.js",
     "static/js/787.7baaa7a4.chunk.js": "/static/js/787.7baaa7a4.chunk.js",
     "static/media/profile-pic.png": "/static/media/profile-pic.3bdea3083575aa866ace.png",
     "static/media/paint.png": "/static/media/paint.87b2a477c221dcabc85e.png",
@@ -9,6 +9,7 @@
     "static/media/cs126.jpg": "/static/media/cs126.486261028d814a0f5182.jpg",
     "static/media/mh.jpg": "/static/media/mh.7cb443b7aedbd188c470.jpg",
     "static/media/ncurses.png": "/static/media/ncurses.4e28abe17bd956d91ffe.png",
+    "static/media/bitventory.jpg": "/static/media/bitventory.e61cb6d2c1816bf18fb6.jpg",
     "static/media/VictorMono-Regular.otf": "/static/media/VictorMono-Regular.62ab6b20ae8236e13b55.otf",
     "static/media/SpaceGrotesk-SemiBold.ttf": "/static/media/SpaceGrotesk-SemiBold.ed2db1918ac205ac4d40.ttf",
     "static/media/SpaceGrotesk-Bold.ttf": "/static/media/SpaceGrotesk-Bold.25a5e7fd63d35d7f6448.ttf",
@@ -43,12 +44,12 @@
     "static/media/down-button.svg": "/static/media/down-button.1e21b3b55d198acc1ebc.svg",
     "static/media/github-logo.svg": "/static/media/github-logo.d40e07b7000728d926f017744e9fe7c4.svg",
     "index.html": "/index.html",
-    "main.f3250f9d.css.map": "/static/css/main.f3250f9d.css.map",
-    "main.eac01ed3.js.map": "/static/js/main.eac01ed3.js.map",
+    "main.9b863ec0.css.map": "/static/css/main.9b863ec0.css.map",
+    "main.b7002ea7.js.map": "/static/js/main.b7002ea7.js.map",
     "787.7baaa7a4.chunk.js.map": "/static/js/787.7baaa7a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3250f9d.css",
-    "static/js/main.eac01ed3.js"
+    "static/css/main.9b863ec0.css",
+    "static/js/main.b7002ea7.js"
   ]
 }
