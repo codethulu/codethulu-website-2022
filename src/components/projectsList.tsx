@@ -185,6 +185,14 @@ const projectsList = [
         image: "dfa",
 
     },
+    {
+        name: "bitventory",
+        year: "2022",
+        description: "A simple, flexible inventory engine designed to be used in a pygame project. The system was built to be adaptable and easy to use, and has features such as item sorting and multiple inventory window support.",
+        tags: ["python", "games"],
+        image: "bitventory",
+
+    },
 
 ]
 export default projectsList;
