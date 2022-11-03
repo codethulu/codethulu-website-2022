@@ -19,6 +19,7 @@ import email_logo from './images/message-logo.svg';
 import linkedin_logo from './images/linkedin-logo.svg';
 import github_logo from './images/github-logo.svg';
 import projectsList from './components/projectsList';
+import current from './components/current';
 import { Parallax, ParallaxBanner, ParallaxProvider } from 'react-scroll-parallax';
 import './components/projectCard.css'
 import "animate.css/animate.min.css";
@@ -30,11 +31,15 @@ function App() {
   }
   const filterProjects = (e: string) => {
     setProjects(projectsList.filter((project: { tags: string | string[]; }) => project.tags.includes(e)));
+    if (e == "c/c++") {
+      setProjects(projectsList.filter((project: { tags: string | string[]; }) => project.tags.includes("c") || project.tags.includes("c++")));
+    }
   }
   const filterProjectsTitle = (e: string) => {
     setProjects(projectsList.filter((project: { name: string; description: string; }) => project.name.toUpperCase().includes(e.toUpperCase()) || project.description.toUpperCase().includes(e.toUpperCase())));
   }
   return (
+
     <>
       <ParallaxProvider>
         {/* <SideLinks /> */}
@@ -75,6 +80,16 @@ function App() {
           <p className='m-top-50'>i'm a software engineer and graphic designer. I am currently studying Computer Science at The University of Warwick, whilst trying to find time for all of my other projects. </p>
           {/* <Split style='left' text="i'm a software engineer and graphic designer, and i love to work on projects that allow me to apply my creative approach to solving problems. currently i am enjoying working on projects for the web and mobile, and game development." image={photo}></Split> */}
           {/* <Split style='right' text="i am currently studying Computer Science at the University of Warwick, where i am publicity officer at the Computing Society and deputy chair of Warwick Labour. " image={warwick}></Split> */}
+
+        </div>
+        <div className='container m-top-50'>
+          <Element name="current" className="element"></Element>
+          <ScrollAnimation animateIn="animate__fadeInLeft">
+            <h1 className='rtl'>here are some of the exciting things i'm working on right now</h1>
+          </ScrollAnimation>
+
+          <ProjectShowcase allProjects={current} filterProjects={null} filterProjectsTitle={null} projects={current} />
+
 
         </div>
         <div className='container m-top-50'>
@@ -176,18 +191,24 @@ const ProjectShowcase = (props: { allProjects: any; filterProjects: any; filterP
   return (
     <>
       {/* <Element name="projects" className="element"></Element> */}
-      <div className='divider'></div>
+      {/* //if filterProjects not null */}
+      {props.filterProjects != null ?
+        <>
+          <div className='divider'></div>
 
-      <div className='center m-top-50'>
-        <Tag name='favourites' filterProjects={props.filterProjects} />
-        <Tag name='rust' filterProjects={props.filterProjects} />
-        <Tag name='python' filterProjects={props.filterProjects} />
-        <Tag name='java' filterProjects={props.filterProjects} />
-        <Tag name='haskell' filterProjects={props.filterProjects} />
-        <Tag name='games' filterProjects={props.filterProjects} />
-        <Tag name='web-dev' filterProjects={props.filterProjects} />
-        <Tag name='all' filterProjects={props.allProjects} />
-      </div>
+          <div className='center m-top-50'>
+            <Tag name='favourites' filterProjects={props.filterProjects} />
+            <Tag name='rust' filterProjects={props.filterProjects} />
+            <Tag name='c/c++' filterProjects={props.filterProjects} />
+            <Tag name='python' filterProjects={props.filterProjects} />
+            <Tag name='java' filterProjects={props.filterProjects} />
+            <Tag name='haskell' filterProjects={props.filterProjects} />
+            <Tag name='games' filterProjects={props.filterProjects} />
+            <Tag name='web-dev' filterProjects={props.filterProjects} />
+            <Tag name='all' filterProjects={props.allProjects} />
+          </div>
+        </>
+        : <></>}
 
       <div className='inner-container h-auto m-top-50'>
         <Masonry
@@ -240,6 +261,8 @@ const Tag = (props: TagProps) => {
     colour = 'rust'
   } else if (props.name === "c") {
     colour = 'green'
+  } else if (props.name === "c++" || props.name === "c/c++") {
+    colour = 'leonard'
   } else if (props.name === "php" || props.name === "web-dev" || props.name === "javacc") {
     colour = 'grass'
   } else if (props.name === "games") {

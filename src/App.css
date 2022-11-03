@@ -365,3 +365,7 @@ a{
 .parallax-banner{
   border-radius: 10px;
 }
+
+.rtl{
+  direction: rtl;
+}
