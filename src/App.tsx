@@ -84,7 +84,7 @@ function App() {
         </div>
         <div className='container m-top-50'>
           <Element name="current" className="element"></Element>
-          <ScrollAnimation animateIn="animate__fadeInLeft">
+          <ScrollAnimation animateIn="animate__fadeInRight">
             <h1 className='rtl'>here are some of the exciting things i'm working on right now</h1>
           </ScrollAnimation>
 
