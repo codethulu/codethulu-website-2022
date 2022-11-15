@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.77b0bf0b.css",
-    "main.js": "/static/js/main.63155360.js",
+    "main.css": "/static/css/main.0bd39737.css",
+    "main.js": "/static/js/main.49b7b10f.js",
     "static/js/787.7baaa7a4.chunk.js": "/static/js/787.7baaa7a4.chunk.js",
     "static/media/profile-pic.png": "/static/media/profile-pic.3bdea3083575aa866ace.png",
     "static/media/paint.png": "/static/media/paint.87b2a477c221dcabc85e.png",
@@ -13,6 +13,7 @@
     "static/media/VictorMono-Regular.otf": "/static/media/VictorMono-Regular.62ab6b20ae8236e13b55.otf",
     "static/media/SpaceGrotesk-SemiBold.ttf": "/static/media/SpaceGrotesk-SemiBold.ed2db1918ac205ac4d40.ttf",
     "static/media/SpaceGrotesk-Bold.ttf": "/static/media/SpaceGrotesk-Bold.25a5e7fd63d35d7f6448.ttf",
+    "static/media/cs325.jpg": "/static/media/cs325.9ebc7ea18c0db823bbf2.jpg",
     "static/media/warwick-labour-website.jpg": "/static/media/warwick-labour-website.8563b8f1657f5a649998.jpg",
     "static/media/BebasNeue-Regular.ttf": "/static/media/BebasNeue-Regular.9aa03f9d52866893add5.ttf",
     "static/media/cs141.png": "/static/media/cs141.b2096f11ce44fde75def.png",
@@ -44,12 +45,12 @@
     "static/media/down-button.svg": "/static/media/down-button.1e21b3b55d198acc1ebc.svg",
     "static/media/github-logo.svg": "/static/media/github-logo.d40e07b7000728d926f017744e9fe7c4.svg",
     "index.html": "/index.html",
-    "main.77b0bf0b.css.map": "/static/css/main.77b0bf0b.css.map",
-    "main.63155360.js.map": "/static/js/main.63155360.js.map",
+    "main.0bd39737.css.map": "/static/css/main.0bd39737.css.map",
+    "main.49b7b10f.js.map": "/static/js/main.49b7b10f.js.map",
     "787.7baaa7a4.chunk.js.map": "/static/js/787.7baaa7a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.77b0bf0b.css",
-    "static/js/main.63155360.js"
+    "static/css/main.0bd39737.css",
+    "static/js/main.49b7b10f.js"
   ]
 }
