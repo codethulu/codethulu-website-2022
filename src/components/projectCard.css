@@ -157,6 +157,9 @@
 .pink{
     background-color: rgb(248, 100, 248);
 }
+.cppc{
+    background: linear-gradient(45deg, rgb(24, 131, 104) 0%,  rgb(21, 133, 151) 100%);
+}
 .image-robot-maze{
     background-image: url(../images/projects/robot-maze.png);
 }
@@ -235,4 +238,7 @@
 }
 .image-bitventory{
     background-image: url(../images/projects/bitventory.jpg);
+}
+.image-compiler{
+    background-image: url(../images/projects/cs325.jpg);
 }

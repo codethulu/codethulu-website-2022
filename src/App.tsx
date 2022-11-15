@@ -261,8 +261,10 @@ const Tag = (props: TagProps) => {
     colour = 'rust'
   } else if (props.name === "c") {
     colour = 'green'
-  } else if (props.name === "c++" || props.name === "c/c++") {
+  } else if (props.name === "c++") {
     colour = 'leonard'
+  } else if (props.name === "c/c++") {
+    colour = 'cppc'
   } else if (props.name === "php" || props.name === "web-dev" || props.name === "javacc") {
     colour = 'grass'
   } else if (props.name === "games") {
