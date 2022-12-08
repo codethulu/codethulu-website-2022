@@ -275,7 +275,7 @@ const Tag = (props: TagProps) => {
     colour = 'red'
   } else if (props.name === "postgresql" || props.name === "pathfinding" || props.name === "functional") {
     colour = 'cobalt'
-  } else if (props.name === "html" || props.name === "swift" || props.name === "favourites") {
+  } else if (props.name === "html" || props.name === "swift" || props.name === "favourites" || props.name === "machine learning") {
     colour = 'fire'
   } else if (props.name === "css") {
     colour = 'blue'

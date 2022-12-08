@@ -197,8 +197,15 @@ const projectsList = [
         name: "Writing a parser and compiler for MiniC",
         year: "2022",
         description: "MiniC is a subset of C. The aim of this project is to examine a language specification and write a compiler from scratch using compiler development technologies currently prevalent in industry and research: this includes C++ and llvm. I will be writing a parser, type checker, and code generator for MiniC.",
-        tags: ["c++", "Compiler", "Parser", "LLVM"],
+        tags: ["c++", "Compiler", "parser", "LLVM"],
         image: "compiler",
+    },
+    {
+        name: "Analysis of a Multi Class Dataset by Projection onto a Very High-dimensional Feature Space",
+        year: "2022",
+        description: "Analysis of a multi class dataset and whether it is linearly seperable in its original feature space as well as the feature space defined by linear pca. The project also explores how we can use non linear pca through the use of a kernel trick to project the data into a higher dimensional space to determine if it is linearly seperable at that feature space.",
+        tags: ["python", "machine learning"],
+        image: "CS342",
     },
 
 ]
