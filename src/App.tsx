@@ -12,7 +12,6 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 import photo from './images/profile-pic.png'
 import paint from './images/paint.png'
-import warwick from './images/warwick.jpg'
 import mh from './images/mh.jpg'
 import twitter_logo from './images/twitter_logo.svg';
 import email_logo from './images/message-logo.svg';
@@ -20,20 +19,23 @@ import linkedin_logo from './images/linkedin-logo.svg';
 import github_logo from './images/github-logo.svg';
 import projectsList from './components/projectsList';
 import current from './components/current';
-import { Parallax, ParallaxBanner, ParallaxProvider } from 'react-scroll-parallax';
+import { ParallaxBanner, ParallaxProvider } from 'react-scroll-parallax';
 import './components/projectCard.css'
 import "animate.css/animate.min.css";
 
 function App() {
+  projectsList.reverse();
   const [projects, setProjects] = useState(projectsList.filter((project: { tags: string | string[]; }) => project.tags.includes("favourites")));
   const allProjects = () => {
     setProjects(projectsList);
   }
   const filterProjects = (e: string) => {
     setProjects(projectsList.filter((project: { tags: string | string[]; }) => project.tags.includes(e)));
-    if (e == "c/c++") {
+    if (e === "c/c++") {
       setProjects(projectsList.filter((project: { tags: string | string[]; }) => project.tags.includes("c") || project.tags.includes("c++")));
     }
+
+
   }
   const filterProjectsTitle = (e: string) => {
     setProjects(projectsList.filter((project: { name: string; description: string; }) => project.name.toUpperCase().includes(e.toUpperCase()) || project.description.toUpperCase().includes(e.toUpperCase())));
@@ -110,10 +112,10 @@ function App() {
           <p className='m-top-50'>interested in working with me, or even just want to talk about any of my work? please don't hesitate to get in contact!</p>
           <div className='center'>
             <div className='m-top-50'></div>
-            <a href='mailto: brendan@codethulu.dev'><button className='contact-button m-top-20'><img src={email_logo} className='contact-logo'></img>  Email</button></a>
-            <a href='https://github.com/codethulu'><button className='contact-button m-top-20'><img src={github_logo} className='contact-logo'></img>  Github</button></a>
-            <a href='https://twitter.com/Codethulu_'><button className='contact-button m-top-20'><img src={twitter_logo} className='contact-logo'></img>  Twitter</button></a>
-            <a href='https://www.linkedin.com/in/brendan-bell-34b282202/'><button className='contact-button m-top-20'><img src={linkedin_logo} className='contact-logo'></img>  LinkedIn</button></a>
+            <a href='mailto: brendan@codethulu.dev'><button className='contact-button m-top-20'><img src={email_logo} className='contact-logo' alt='email icon'></img>  Email</button></a>
+            <a href='https://github.com/codethulu'><button className='contact-button m-top-20'><img src={github_logo} className='contact-logo' alt='github logo'></img>  Github</button></a>
+            <a href='https://twitter.com/Codethulu_'><button className='contact-button m-top-20'><img src={twitter_logo} className='contact-logo' alt='twitter logo'></img>  Twitter</button></a>
+            <a href='https://www.linkedin.com/in/brendan-bell-34b282202/'><button className='contact-button m-top-20'><img src={linkedin_logo} className='contact-logo' alt='linked in logo'></img>  LinkedIn</button></a>
 
           </div>
 
@@ -123,43 +125,6 @@ function App() {
   );
 }
 export default App;
-
-interface SplitProps {
-  style: string;
-  text: string;
-  image: any;
-}
-
-
-const Split = (props: SplitProps) => {
-  switch (props.style) {
-    case 'left':
-      return (
-        <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
-          <div className='split-box m-top-10vh'>
-            <img src={props.image} className='split-pic greyscale'></img>
-            <div className='inline m-left-20'>
-              <p>{props.text}</p>
-            </div>
-          </div>
-        </ScrollAnimation >
-      );
-    case 'right':
-      return (
-        <ScrollAnimation animateIn="animate__fadeIn" animateOnce={true}>
-          <div className='split-box right-0 m-top-100 align-right'>
-            <div className='inline'>
-              <p>{props.text}</p>
-            </div>
-            <img src={props.image} className='split-pic m-left-20 greyscale'></img>
-
-          </div>
-        </ScrollAnimation>
-      );
-  }
-  return (<></>);
-
-}
 
 interface ProjectCardProps {
   name: string; year: string; description: string; tags: string[]; image: string; filterProjects: any;
@@ -187,7 +152,7 @@ const ProjectCard = (props: ProjectCardProps) => {
 }
 
 const ProjectShowcase = (props: { allProjects: any; filterProjects: any; filterProjectsTitle: any; projects: any }) => {
-  const [searchTerm, setSearchTerm] = React.useState("");
+  // const [searchTerm, setSearchTerm] = React.useState("");
   return (
     <>
       {/* <Element name="projects" className="element"></Element> */}
@@ -230,23 +195,7 @@ const ProjectShowcase = (props: { allProjects: any; filterProjects: any; filterP
     </>
   );
 }
-const SideLinks = () => {
-  return (
-    <div>
-      <div className='side-container left-side'>
-        <a href='https://github.com/codethulu'><div className='link-logo github'></div></a>
-        <a href='https://twitter.com/Codethulu_'><div className='link-logo twitter'></div></a>
-        <a href='https://www.linkedin.com/in/brendan-bell-34b282202/'><div className='link-logo linkedin'></div></a>
 
-        <div className='line'></div>
-      </div>
-      <div className='side-container right-side'>
-        <p><a href='mailto: brendan@codethulu.dev'>brendan@codethulu.dev</a></p>
-        <div className='line'></div>
-      </div>
-    </div>
-  );
-}
 
 interface TagProps {
   name: string; filterProjects: any;
