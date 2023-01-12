@@ -207,6 +207,13 @@ const projectsList = [
         tags: ["python", "machine learning"],
         image: "CS342",
     },
+    {
+        name: "OMEGA DAY: 3D Three.js Game",
+        year: "2023",
+        description: "A First Person Shooter game written using three js. The game consists of a gravity and collision system written from scratch, and artificial inteeligence for enemies. Each enemy takes in multiple input nodes and calculates correct bahviour using a simple neural network.",
+        tags: ["javascript", "opengl", "games", "ai"],
+        image: "CS324",
+    },
 
 ]
 export default projectsList;
