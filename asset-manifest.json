@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.050a792c.css",
-    "main.js": "/static/js/main.36fe01f1.js",
+    "main.css": "/static/css/main.e3238a67.css",
+    "main.js": "/static/js/main.ca60422d.js",
     "static/js/787.7baaa7a4.chunk.js": "/static/js/787.7baaa7a4.chunk.js",
     "static/media/profile-pic.png": "/static/media/profile-pic.3bdea3083575aa866ace.png",
     "static/media/paint.png": "/static/media/paint.87b2a477c221dcabc85e.png",
@@ -11,7 +11,9 @@
     "static/media/ncurses.png": "/static/media/ncurses.4e28abe17bd956d91ffe.png",
     "static/media/bitventory.jpg": "/static/media/bitventory.e61cb6d2c1816bf18fb6.jpg",
     "static/media/VictorMono-Regular.otf": "/static/media/VictorMono-Regular.62ab6b20ae8236e13b55.otf",
+    "static/media/overthrow.jpg": "/static/media/overthrow.9d344b53ffc2a342dacb.jpg",
     "static/media/cs342.jpg": "/static/media/cs342.2f261cc3ecf548ac7577.jpg",
+    "static/media/cs324.jpg": "/static/media/cs324.d0eacd756d5f6347b2a4.jpg",
     "static/media/SpaceGrotesk-SemiBold.ttf": "/static/media/SpaceGrotesk-SemiBold.ed2db1918ac205ac4d40.ttf",
     "static/media/SpaceGrotesk-Bold.ttf": "/static/media/SpaceGrotesk-Bold.25a5e7fd63d35d7f6448.ttf",
     "static/media/cs325.jpg": "/static/media/cs325.9ebc7ea18c0db823bbf2.jpg",
@@ -46,12 +48,12 @@
     "static/media/down-button.svg": "/static/media/down-button.1e21b3b55d198acc1ebc.svg",
     "static/media/github-logo.svg": "/static/media/github-logo.d40e07b7000728d926f017744e9fe7c4.svg",
     "index.html": "/index.html",
-    "main.050a792c.css.map": "/static/css/main.050a792c.css.map",
-    "main.36fe01f1.js.map": "/static/js/main.36fe01f1.js.map",
+    "main.e3238a67.css.map": "/static/css/main.e3238a67.css.map",
+    "main.ca60422d.js.map": "/static/js/main.ca60422d.js.map",
     "787.7baaa7a4.chunk.js.map": "/static/js/787.7baaa7a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.050a792c.css",
-    "static/js/main.36fe01f1.js"
+    "static/css/main.e3238a67.css",
+    "static/js/main.ca60422d.js"
   ]
 }
