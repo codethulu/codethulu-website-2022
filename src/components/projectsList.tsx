@@ -205,14 +205,21 @@ const projectsList = [
         year: "2022",
         description: "Analysis of a multi class dataset and whether it is linearly seperable in its original feature space as well as the feature space defined by linear pca. The project also explores how we can use non linear pca through the use of a kernel trick to project the data into a higher dimensional space to determine if it is linearly seperable at that feature space.",
         tags: ["python", "machine learning"],
-        image: "CS342",
+        image: "cs342",
     },
     {
-        name: "OMEGA DAY: 3D Three.js Game",
+        name: "OMEGA DAY",
         year: "2023",
         description: "A First Person Shooter game written using three js. The game consists of a gravity and collision system written from scratch, and artificial inteeligence for enemies. Each enemy takes in multiple input nodes and calculates correct bahviour using a simple neural network.",
         tags: ["javascript", "opengl", "games", "ai"],
-        image: "CS324",
+        image: "cs324",
+    },
+    {
+        name: "Overthrow Synthetica",
+        year: "2023",
+        description: "A First Person Shooter game written using three js. The game consists of a gravity and collision system written from scratch, and artificial inteeligence for enemies. Each enemy takes in multiple input nodes and calculates correct bahviour using a simple neural network.",
+        tags: ["typescript", "opengl", "games", "ai", "webpack"],
+        image: "synthetica",
     },
 
 ]
